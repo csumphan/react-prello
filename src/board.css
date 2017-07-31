@@ -1,0 +1,505 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #0079BF;
+    margin: 0;
+    padding: 0;
+    font-family:"Helvetica","Open Sans", sans-serif;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.visible {
+  display:block;
+}
+
+.none {
+  display: none;
+}
+
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.fullscreen {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+    margin-top: 50px;
+    white-space: nowrap;
+    height: 100%;
+    max-height: 100%;
+    margin-right: 0px;
+    overflow-y: hidden;
+}
+
+.board-title {
+    margin: 0 0 0 20px;
+    color: white;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.lol {
+    list-style: none;
+    padding: 0 10px;
+    max-height: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+.lol > li {
+    display: inline-block;
+    width: 280px;
+    vertical-align: top;
+    background-color: #E2E4E6;
+    border-radius: 0.3em;
+    box-shadow: 1px 2px  #2e2e2e;
+    text-align: center;
+    line-height: 18px;
+    margin: 10px;
+    max-height: 530px;
+    overflow: hidden;
+
+}
+
+.list-header {
+
+}
+
+.list-form {
+    display: inline-block;
+    width: 70%;
+}
+
+.list-title {
+    display: inline-block;
+    width: 100%;
+    font-size: 24px;
+    color: #4D4D4D;
+    font-weight: 600;
+    margin: 5px 0;
+    background-color: #E2E4E6;
+    outline: none;
+    border: 1px solid #E2E4E6;
+    border-radius: 0.3em;
+}
+
+.list-title:focus {
+    background-color: ghostwhite;
+}
+
+.clickable {
+    cursor: pointer;
+}
+.click {
+    cursor: pointer;
+}
+.clickable:hover {
+    background-color: gray;
+}
+.card-list {
+    padding: 0 4px;
+    margin: 0px;
+    width: auto;
+    max-height: 440px;
+    overflow: auto;
+}
+.card-list li {
+    list-style: none;
+    margin: 5px;
+    color: #4D4D4D;
+}
+
+.card-list a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.mini-card {
+    color:black;
+    display: block;
+    padding: 5px;
+    background-color:ghostwhite;
+    border-radius: 0.3em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mini-card:hover {
+    background-color: gray;
+    color: white;
+}
+
+.add-card {
+    margin: 5px 0;
+    padding: 5px 0;
+    color: #4D4D4D;
+}
+.add-card:hover {
+    background-color: gray;
+    color: white;
+}
+
+.card {
+    position:absolute;
+    width: 50%;
+    max-height: 85%;
+    margin: 0 auto;
+    border: 1px black solid;
+    background-color: ghostwhite;
+    padding-left: 10px;
+    border-radius: 0.3em;
+    top:10%;
+    left: 25%;
+    z-index: 2;
+    overflow-y: auto;
+    //overflow-x: hidden;
+    display:none;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+}
+
+.comment-box {
+    width: 80%;
+}
+
+.button {
+    width: auto;
+    display: inline-block;
+    border-radius: 0.3em;
+    padding: 5px;
+    margin: 5px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:gray;
+}
+
+.date-form {
+    display:none;
+}
+
+.picker {
+    padding: 5px;
+    background-color: white;
+    border-radius: 0.3em;
+    width: 90%;
+    display:none;
+}
+
+.label-input {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 90%;
+    font-size: 16px;
+    border-radius: 0.3em;
+}
+
+
+.label-container {
+    padding: 0;
+    margin: 5px auto;
+    width: 98%;
+    white-space: normal;
+
+}
+
+.label {
+    min-width: 50px;
+    height: 35px;
+    text-align: center;
+    vertical-align:middle;
+    line-height: 35px;
+    margin: 5px;
+    padding: 0 2px;
+    display:inline-block;
+    list-style: none;
+    background-color: gray;
+    border-radius: 0.3em;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #000000;
+}
+
+.label-sm {
+    width: 35px;
+    height: 8px;
+    margin: 2px;
+    padding: 0;
+}
+
+.green-label {
+    background-color: #61BD4F;
+}
+
+.blue-label {
+    background-color: #0079BF;
+}
+
+.red-label {
+    background-color: #EB5A46;
+}
+
+.yellow-label {
+    background-color: #F2D600;
+}
+
+.orange-label {
+    background-color: #FFAB4A;
+}
+#label li {
+    display: inline-block;
+    border-radius: 0.3em;
+    padding: 5px;
+}
+
+.member-input {
+    margin: 5px;
+    width: 95%;
+    font-size: 16px;
+    border-radius: 0.3em;
+}
+.inline {
+    display:inline-block;
+}
+.member-list {
+    padding: 20px 0;
+    border-top: 1px solid lightgray;
+}
+
+.member-list a {
+    display: inline-block;
+    padding: 8px;
+    margin: 2px;
+    background-color: palegreen;
+    border-radius: 0.3em;
+    text-decoration: none;
+    color: black;
+}
+.description-text {
+    width: 95%;
+    font-size: 12px;
+    word-wrap: break-word;
+}
+.description-input {
+    width: 95%;
+    font-size: 12px;
+    border-radius: 0.3em;
+    background-color: white;
+    resize:vertical;
+    display:none;
+}
+
+.comment-user {
+    margin: 0;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.comment-date {
+    margin: 0;
+    color: gray;
+    font-size: 0.8em;
+}
+.comment-section ul {
+    padding: 0;
+}
+
+.comment-input {
+    width: 80%;
+    border-radius: 0.5em;
+    padding: 5px;
+}
+
+.comment-text {
+    font-size: 12px;
+    padding: 0;
+    margin: 10px 0;
+    margin-left: 2px;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    width: 80%;
+    padding: 5px;
+}
+
+.comment-section ul {
+    list-style: none;
+}
+
+.remove {
+    float:right;
+    background-color:red;
+    font-size: 12px;
+}
+
+.remove:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.edit {
+    display: inline-block;
+    padding: 8px;
+    margin: 2px;
+    background-color: lightgray;
+    border-radius: 0.3em;
+}
+
+.member-list a:hover {
+    background-color: limegreen;
+}
+
+.board-list {
+    position: fixed;
+    top: 39px;
+    left: 105px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: lightgray;
+    display:none;
+}
+
+.board-list h2 {
+    text-align: center;
+}
+.board-list ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.board-list li {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 0.3em;
+    background-color: ghostwhite;
+}
+
+.board-list p {
+    text-align: center;
+    margin: 10px 5px;
+    padding: 5px;
+    border-radius: 0.3em;
+    background-color: orangered;
+}
+
+
+
+.hover-list:hover .board-list{
+    display: block;
+}
+
+.hover-list:hover .menu-list{
+    display: block;
+    height: auto;
+}
+
+.menu-list {
+
+    position:fixed;
+    right: 0%;
+    top: 40px;
+    padding: 10px;
+    background-color: white;
+    width: 300px;
+    height:100%;
+    display: none;
+    text-align: center;
+
+    overflow: hidden;
+
+}
+
+.menu-list h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.menu-list h3 {
+
+    padding: 5px 0;
+}
+
+.mem-name {
+    padding: 8px 5px;
+    margin: 8px 5px;
+    border-radius: 0.5em;
+    border: 1px solid #D2D4D6;
+    background-color: #F3F3F3;
+    font-size: 0.8em;
+    width: 270px;
+}
+
+.mem-name:focus {
+    outline: none;
+    background-color: white;
+}
+.bg {
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: none;
+}
+
+.title-form {
+    display:inline-block;
+}
+.title {
+    display: inline-block;
+    width: 100%;
+    font-size: 28px;
+    margin: 5px 0;
+    background-color: ghostwhite;
+    outline: none;
+    border: 1px solid ghostwhite;
+    border-radius: 0.3em;
+}
+
+.title:focus {
+    background-color: lightgray;
+}
+
+.close {
+    display: inline-block;
+    font-size: 28px;
+    float: right;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.list-close {
+    font-size: 20px;
+}
+
+.selected-label li:hover {
+    border: 1px solid #FF1818;
+    box-shadow: 0 0 5px #FF1818;
+
+}
+
+.visible {
+    display: block;
+}
