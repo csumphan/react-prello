@@ -11,7 +11,7 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path={'/'} component={LoginComponents} />
+          <Route exact path={'/'} component={LoginComponents} />
           <Route path={'/board'} component={Board} />
         </Switch>
 
